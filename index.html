@@ -4,116 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS Exercises</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="submit"] {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .link-section {
+            margin: 20px 0;
+        }
+        select {
+            padding: 10px;
+            margin: 20px 0;
+            width: 200px;
+        }
+        aside {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        aside li {
+            margin: 10px 0;
+        }
+        aside a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        aside a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
 </head>
 <body>
-    <h1>HTML & CSS Exercises</h1>
-    <h2>Welcome</h2>
-    <h3>to</h3>
-    <h4>my</h4>
-    <h5>HTML & CSS</h5>
-    <h6>Exercise</h6>
+    <!-- This is the Navigation menu -->
+    <nav>
+        <h3>Navigation Menu</h3>
+        <a href="#home">Home</a> |
+        <a href="about.html">About me</a> |
+        <a href="#services">Services</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Johan's Website</h1>
+    <h2>Welcome to my HTML & CSS Exercise</h2>
     <hr>
 
+    <!-- This is name table -->
+    <table>
+        <caption>Names</caption>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Johan</td>
+                <td>Svensson</td>
+                <td>Lexion-testmail@lexicon.se</td>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td>Studentsson</td>
+                <td>Test-mail@hotmail.com</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <ol>
-       <h3>Morning routine:</h3>
-        <li>Wake up</li>
-        <li>Eat breakfast
-            <ol>
-                <li>Include vitamins</li>
-                <li>And water</li>
-            </ol>
-        </li>
-        <li>Get ready to read code</li>
-        </ol>
-        <br>
+    <div class="link-section">
+        <a href="https://www.lexicon.se" target="_blank">Visit Lexicon</a>
+        <br><br>
+        <img src="images/lexicon.png" alt="Lexicon Logo" width="100">
+    </div>
 
+    <div>
+        <label for="technology">Choose a technology:</label><br>
+        <select id="technology" name="technology">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+    </div>
 
+    <aside>
+        <h3>Related Links</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS-Tricks</a></li>
+        </ul>
+    </aside>
 
-
-        <article>
-            <h2>About Me</h2>
-            <p>Hello! My name is Johan Svensson. I am a student at Lexicon. I am learning web development and I am excited to improve my skills in HTML and CSS.</p>
-        <ul> 
-           <strong><li>HTML</li></strong>
-            <strong><li>CSS</li></strong>
-            <em><li>JavaScript</li></em>
-
-
-
-
-            <br>
-            <a href="https://www.lexicon.se">Visit Lexicon</a>
-            <br>
-            <img src="images/lexicon.png" alt="Lexicon Logo" width="200">
-
-        
-
-            <br>
-            <!-- This is the Navigation menu-->
-            <nav>
-                <h3>Navigation Menu</h3>
-                <a href="#home">Home</a> |
-                <a href="#about">About</a> |
-                <a href="#services">Services</a> |
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <!-- This is the contact us form-->
-           <form action="/submit" method="post">
-                <h3>Contact Us</h3>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                 <label for="email">Email:</label><br>
-                 <input type="email" id="email" name="email"><br><br>
-                 <label for="Text">Text:</label><br>
-                 <input type="Text" id="Text" name="Text"><br><br>
-                <input type="submit" value="Submit">
-            </form>
-
-
-
-            <!-- This is name table -->
-            <br>
-            <table border="1">
-                <caption>Names</caption>
-                <thead>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Johan Svensson</td>
-                        <td>Jörgen Huss</td>
-                        <td>Student Of Lexicon</td>
-                    </tr>
-                    <tr>
-                        <td>Student</td>
-                        <td>Student</td>
-                        <td>Test-bot</td>
-                    </tr>
-                </tbody>
-                </table>
-                <br>
-
-                <select>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="javascript">JavaScript</option>
-
-
-                <aside>
-                    <h3>Related Links</h3>
-                    <ul>
-                        <li><a href="https://www.w3schools.com">W3Schools</a></li>
-                        <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
-                        <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
-                    </ul>
-
-
-                    
 </body>
 </html>
